@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweethtooth • Profile</title>
+  <style>
+    :root {
+      --dusty-pink: #e5a3ad;
+      --accent: #ff99cc;
+      --bg: #fff5f7;
+      --text: #1f1f1f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .site-header {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--dusty-pink);
+      letter-spacing: 1px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 14px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 8px 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+
+    .nav button {
+      background: transparent;
+      border: none;
+      padding: 10px 16px;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .25s ease;
+    }
+
+    .nav button:hover,
+    .nav .active {
+      background: var(--dusty-pink);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* Highlight Profil */
+    .highlight-profile {
+      background-color: #ffe6ef;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      border-top: 3px solid #ff99cc;
+      border-bottom: 3px solid #ff99cc;
+    }
+
+    .highlight-profile h2 {
+      font-size: 28px;
+      color: #d94f86;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+
+    .profile-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(255, 150, 190, 0.3);
+      max-width: 850px;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pixel-char {
+      margin-right: 30px;
+    }
+
+    .pixel-art {
+      width: 150px;
+      height: auto;
+      image-rendering: pixelated;
+      border-radius: 10px;
+    }
+
+    .profile-info {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .profile-info h3 {
+      font-size: 22px;
+      color: #d94f86;
+      margin-bottom: 10px;
+    }
+
+    .profile-info h3 span {
+      color: #888;
+      font-weight: normal;
+    }
+
+    .profile-info .desc {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .profile-info .quote {
+      margin-top: 18px;
+      font-style: italic;
+      color: #d94f86;
+      font-size: 15px;
+    }
+
+    @media (max-width: 700px) {
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .pixel-char {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .profile-info {
+        margin-left: 0;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      background: #ffeef2;
+      padding: 20px;
+      color: #444;
+      margin-top: 40px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">Sweethtooth.</div>
+    <nav class="nav">
+      <button onClick="window.location.href='index.html'">Home</button>
+      <button onClick="window.location.href='shopping-guide.html'">Shopping Guide</button>
+      <button onClick="window.location.href='Order.html'">Order</button>
+      <button class="active">Profile</button>
+    </nav>
+  </header>
+
+  <!-- HIGHLIGHT PROFILE -->
+  <section class="highlight-profile">
+    <h2>Meet the Creator 🍰</h2>
+    <div class="profile-card">
+      <div class="pixel-char">
+        <img src="ChatGPT Image Nov 11, 2025, 01_43_59 PM.png" width="108" height="151" alt="Kyna Pixel Art">
+      </div>
+      <div class="profile-info">
+        <h3>Kyna Barrah Amanda <span>• 9A</span></h3>
+        <p class="desc">
+          Seorang gadis yang penuh ide dan warna.  
+          Kyna menciptakan <strong>Sweethtooth</strong> sebagai ruang kecil tempat
+          warna pastel, aroma kue, dan senyum sederhana bertemu. 🍓  
+          Ia suka hal-hal manis, desain yang lembut, dan suasana yang bikin tenang.
+        </p>
+        <p class="quote">
+          “Aku percaya hal kecil yang dibuat dengan hati bisa jadi sesuatu yang indah.” ✨
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 Sweethtooth Bakery • crafted with love by Kyna Barrah Amanda 💕
+  </footer>
+
+</body>
+</html>
